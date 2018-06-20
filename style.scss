@@ -1,15 +1,15 @@
 @font-face {
-  font-family: Meiryo-r;
-  src: url("font/meiryo.ttc"); }
+  font-family: "Meiryo-r";
+  src: url("fonts/meiryo.ttc"); }
 @font-face {
-  font-family: Meiryo-b;
-  src: url("font/meiryob.ttc"); }
+  font-family: "Meiryo-b";
+  src: url("fonts/meiryob.ttc"); }
  
 *{margin: 0;padding: 0;box-sizing: border-box;  }
 body{
-	min-width: 1000px;
+	// min-width: 1000px;
 	margin: auto;
-	font-family: Meiryo-b;
+	font-family: "Meiryo-b";
 	border-top: 4px solid #0f5c9b;
 }
 .phone-contact{
@@ -19,7 +19,7 @@ body{
 		margin-right:6px;
 	}
 	.date-time{
-		font-family: Meiryo-r;
+		font-family: "Meiryo-r";
 		font-size:10px;
 		color:black;
 		margin-left:3px;
@@ -73,12 +73,16 @@ body{
 				}
 			}
 		}
+		.open-respon{
+			display: none;
+		}
 	} //end css header
 	.menu{
 		height: 62px;
 		margin-top: 10px;
 		width: 954px;
 		text-align: center;
+		transition:.5s;
 		a{
 			display: inline-block;
 			margin-left:-3px;
@@ -178,7 +182,7 @@ body{
 			}
 		}
 		.right{
-			font-family: Meiryo-r;
+			font-family: "Meiryo-r";
 			font-size:16px;
 			display: inline-block;
 			margin:38px 0 0 39px;
@@ -362,7 +366,7 @@ body{
 #sub-menu{
 	background-color: #cccccc;
 	.wid{
-		font-family: Meiryo-r;
+		font-family: "Meiryo-r";
 		width: 647px;
 		height:120px;
 		text-align:center;
@@ -389,12 +393,100 @@ body{
 }
 .bottom-footer{
 	height: 51px;
-	font-family: Meiryo-r;
+	font-family: "Meiryo-r";
 	font-size:14px;
 	color:#212121;
 	text-align:center;
 	padding-top:20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width:   768px){
+	*{margin:0;}
+	body{
+		width: 100%;
+		border-top:10px solid #0f5c9b;
+	}
+	.top-header{
+		height: 88px;
+		width: 100%;;
+		margin-top:9px;
+		.header{
+			.left{
+				margin-left:18px;
+			}
+			.right{
+				display: none;
+			}
+			.open-respon{
+				display: block;
+				text-align:right;
+				img{
+					width: 40px;
+					height: 40px;
+					margin-right:10px;
+				}
+			}
+		}
+	}
+	.menu{
+		transition: .5s;
+		//width: 0!important;
+	}
+	.menu.responsive{
+		    height: 420px;
+		    display: block;
+		    margin-top: 10px;
+		    width: 64%!important;
+		    position: relative;
+		    z-index: 100;
+		    animation: hienra .5s forwards;
+		.over{
+			    width: 100%;
+			    height: 420px;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    z-index: 10;
+			    background: #fffafa;
+		}
+		a{
+			    display: block;
+			    border-bottom: 1px dashed #dac8a542;
+			img{
+				    border-bottom: 0px;
+				    z-index: 1001;
+				    &:hover{
+					background-color: transparent;
+				}
+				
+			}
+			&::before{
+				
+			    width: 0;
+			    height: 0;
+			   
+			}
+			&:last-child::after{
+			    width: 0;
+			    height: 0;
+			}
+			&:visited{
+					background-color: lightblue;
+				}
+		}
 		
+	}
+
+}
+
+//animation
+@-webkit-keyframes hienra{
+	0%{width: 0%;}
+	100%{width: 64%;}
+}
+@-webkit-keyframes divao{
+	0%{width: 64%;}
+	99%{width: 0%;}
+	100%{
+		display: none;
+	}
 }

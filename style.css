@@ -1,18 +1,17 @@
 @font-face {
-  font-family: Meiryo-r;
-  src: url("font/meiryo.ttc"); }
+  font-family: "Meiryo-r";
+  src: url("fonts/meiryo.ttc"); }
 @font-face {
-  font-family: Meiryo-b;
-  src: url("font/meiryob.ttc"); }
+  font-family: "Meiryo-b";
+  src: url("fonts/meiryob.ttc"); }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  min-width: 1000px;
   margin: auto;
-  font-family: Meiryo-b;
+  font-family: "Meiryo-b";
   border-top: 4px solid #0f5c9b; }
 
 .phone-contact {
@@ -21,7 +20,7 @@ body {
   .phone-contact .phone-icon {
     margin-right: 6px; }
   .phone-contact .date-time {
-    font-family: Meiryo-r;
+    font-family: "Meiryo-r";
     font-size: 10px;
     color: black;
     margin-left: 3px;
@@ -62,11 +61,14 @@ body {
         height: 25px; }
       .top-header .header .right .phone-contact .date-time {
         font-size: 10px; }
+    .top-header .header .open-respon {
+      display: none; }
   .top-header .menu {
     height: 62px;
     margin-top: 10px;
     width: 954px;
-    text-align: center; }
+    text-align: center;
+    transition: .5s; }
     .top-header .menu a {
       display: inline-block;
       margin-left: -3px; }
@@ -147,7 +149,7 @@ body {
         left: 100%;
         top: -100px; }
     #news .nd-news .right {
-      font-family: Meiryo-r;
+      font-family: "Meiryo-r";
       font-size: 16px;
       display: inline-block;
       margin: 38px 0 0 39px; }
@@ -292,7 +294,7 @@ body {
 #sub-menu {
   background-color: #cccccc; }
   #sub-menu .wid {
-    font-family: Meiryo-r;
+    font-family: "Meiryo-r";
     width: 647px;
     height: 120px;
     text-align: center;
@@ -314,10 +316,82 @@ body {
 
 .bottom-footer {
   height: 51px;
-  font-family: Meiryo-r;
+  font-family: "Meiryo-r";
   font-size: 14px;
   color: #212121;
   text-align: center;
   padding-top: 20px; }
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0; }
+
+  body {
+    width: 100%;
+    border-top: 10px solid #0f5c9b; }
+
+  .top-header {
+    height: 88px;
+    width: 100%;
+    margin-top: 9px; }
+    .top-header .header .left {
+      margin-left: 18px; }
+    .top-header .header .right {
+      display: none; }
+    .top-header .header .open-respon {
+      display: block;
+      text-align: right; }
+      .top-header .header .open-respon img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px; }
+
+  .menu {
+    transition: .5s; }
+
+  .menu.responsive {
+    height: 420px;
+    display: block;
+    margin-top: 10px;
+    width: 64% !important;
+    position: relative;
+    z-index: 100;
+    animation: hienra .5s forwards; }
+    .menu.responsive .over {
+      width: 100%;
+      height: 420px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      background: #fffafa; }
+    .menu.responsive a {
+      display: block;
+      border-bottom: 1px dashed #dac8a542; }
+      .menu.responsive a img {
+        border-bottom: 0px;
+        z-index: 1001; }
+        .menu.responsive a img:hover {
+          background-color: transparent; }
+      .menu.responsive a::before {
+        width: 0;
+        height: 0; }
+      .menu.responsive a:last-child::after {
+        width: 0;
+        height: 0; }
+      .menu.responsive a:visited {
+        background-color: lightblue; } }
+@-webkit-keyframes hienra {
+  0% {
+    width: 0%; }
+  100% {
+    width: 64%; } }
+@-webkit-keyframes divao {
+  0% {
+    width: 64%; }
+  99% {
+    width: 0%; }
+  100% {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

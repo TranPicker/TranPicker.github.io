@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="name" content="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allgrow Labo Test</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 <body>
     <div class="top-header">
         <header class="header">
@@ -22,20 +22,25 @@
                     <p class="mail">メールでのお問合わせはこちら</p>
                 </div>
                  <div class="phone-contact">
-                    <img class="phone-icon" src="images/phone-icon.png"></img>
+                    <img class="phone-icon" src="images/phone-icon.png" />
                     <img src="images/phone-number-text.png" alt="" class="phone-number">
                     <p class="date-time">営業時間 9：00～18：00　定休日 土・日・祝日</p>
                 </div>
             </div>
+            <div class="open-respon">
+               <img src="images/responsive-button.png" alt="responsive button" onclick="openNav()">
+            </div>
 
         </header><!-- /header -->
         <!-- menu responsive -->
-        <nav class="menu">
+        <nav class="menu" id="navbar">
+            <div class="over">
             <a href="#_news"><img src="images/mn-news.png" alt="news link"></a>
             <a href="#_company"><img src="images/mn-company.png" alt="news link"></a>
             <a href="#_construction"><img src="images/mn-construction.png" alt="construction link"></a>
             <a href="#_overview"><img src="images/mn-overview.png" alt="overview link"></a>
             <a href="#_service"><img src="images/mn-service.png" alt="news link" /></a>
+            </div>
         </nav><!-- end menu responsive -->
     </div> <!-- end top-header -->
 
@@ -164,5 +169,6 @@
     <div class="bottom-footer">
         © IT NET
     </div>
+<script src="responsive.js" ></script>
 </body>
 </html>
