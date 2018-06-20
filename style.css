@@ -347,7 +347,8 @@ body {
         margin-right: 10px; }
 
   .menu {
-    transition: .5s; }
+    transition: .5s;
+    width: 0 !important; }
 
   .menu.responsive {
     height: 420px;
