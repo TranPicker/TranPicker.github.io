@@ -147,12 +147,15 @@ body{
 		left:0;
 		z-index: 3;
 	}
-	#img-for-text-bt{
+	#img-for-text-bt,#img-for-text-res{
 		border:1px solid #fff;
 		z-index: 10;
 		top:50%;
 		left:50%;
-		transform:translate(-50%,-50%);
+		transform:translate(-50%,-70%);
+	}
+	#img-for-text-res{
+		display: none;
 	}
 }
 //css for news block
@@ -413,9 +416,10 @@ body{
 @media screen and (max-width:   768px){
 	*{margin:0;}
 	body{
+		min-width:768px;
 		width: 100%;
 		min-width:auto;
-		border-top:10px solid #0f5c9b;
+		border-top:5px solid #0f5c9b;
 	}
 	.top-header{
 		height: 60px;
@@ -491,6 +495,7 @@ body{
 			font-size:15px;
 			color: #fff;
 			position: relative;
+			margin-right:25px;
 			.icon{
 				height: 7px;
 				width: auto;
@@ -510,6 +515,16 @@ body{
 		}
 	}
 
+	} //end top-header
+	.bottom-header{
+		height: 210px;;
+		#img-for-text-bt{
+			display: none;
+		}
+		#img-for-text-res{
+			display:block;
+			width: 268px;
+		}
 	}
 
 }
