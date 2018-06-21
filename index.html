@@ -13,7 +13,8 @@
             <div class="left">
                 <div class="logo-img"><img src="images/logo.png" alt="imgae logo IT NET WORK"></div>
                 <div class="logo-text">
-                    <img src="images/logo-text.png" alt="Name brand">
+                    <img src="images/logo-text.png" alt="Name brand" class="normal">
+                    <img src="images/logo-text-res.png" alt="Name brand" class="responsive">
                 </div>
             </div> <!-- end left --></a>
             <div class="right">
@@ -28,12 +29,14 @@
                 </div>
             </div>
             <div class="open-respon">
-               <img src="images/responsive-button.png" alt="responsive button" onclick="openNav()">
+               <img src="images/open-button.png" alt="responsive button" onclick="openNav()" id="open-button">
+               <img src="images/close-button.png" alt="responsive button" onclick="closeNav()" id="close-button">
+
             </div>
 
         </header><!-- /header -->
-        <!-- menu responsive -->
-        <nav class="menu" id="navbar">
+        <!-- menu normal -->
+        <nav class="menu" id="navbar-normal">
             <div class="over">
             <a href="#_news"><img src="images/mn-news.png" alt="news link"></a>
             <a href="#_company"><img src="images/mn-company.png" alt="news link"></a>
@@ -41,7 +44,18 @@
             <a href="#_overview"><img src="images/mn-overview.png" alt="overview link"></a>
             <a href="#_service"><img src="images/mn-service.png" alt="news link" /></a>
             </div>
+        </nav><!-- end menu normal -->
+        <!-- menu for max-width: 768px -->
+        <nav class="menu" id="navbar-respon">
+            <div class="over">
+                <a href="#_news" class="navbar-item"><img src="images/mn-news.png" alt="news link"></a>
+                <a href="#_company" class="navbar-item"><img src="images/mn-company.png" alt="news link"></a>
+                <a href="#_construction" class="navbar-item"><img src="images/mn-construction.png" alt="construction link"></a>
+                <a href="#_overview" class="navbar-item"><img src="images/mn-overview.png" alt="overview link"></a>
+                <a href="#_service" class="navbar-item"><img src="images/mn-service.png" alt="news link" /></a>
+            </div>
         </nav><!-- end menu responsive -->
+
     </div> <!-- end top-header -->
 
     <div class="bottom-header">

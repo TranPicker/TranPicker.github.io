@@ -10,6 +10,7 @@
   box-sizing: border-box; }
 
 body {
+  min-width: 950px;
   margin: auto;
   font-family: "Meiryo-b";
   border-top: 4px solid #0f5c9b; }
@@ -53,6 +54,8 @@ body {
       .top-header .header .left .logo-text {
         float: left;
         margin-left: 26px; }
+        .top-header .header .left .logo-text img.responsive {
+          display: none; }
     .top-header .header .right {
       display: block;
       float: right !important;
@@ -63,22 +66,22 @@ body {
         font-size: 10px; }
     .top-header .header .open-respon {
       display: none; }
-  .top-header .menu {
+  .top-header .menu#navbar-normal {
     height: 62px;
     margin-top: 10px;
     width: 954px;
     text-align: center;
     transition: .5s; }
-    .top-header .menu a {
+    .top-header .menu#navbar-normal a {
       display: inline-block;
       margin-left: -3px; }
-      .top-header .menu a img {
+      .top-header .menu#navbar-normal a img {
         max-width: 100%;
         padding: 15px 0px 20px 0px;
         border-bottom: 4px solid #dddddd; }
-        .top-header .menu a img:hover {
+        .top-header .menu#navbar-normal a img:hover {
           background-color: #ffcaca; }
-      .top-header .menu a::before {
+      .top-header .menu#navbar-normal a::before {
         content: "";
         width: 1px;
         height: 40px;
@@ -87,7 +90,7 @@ body {
         position: relative;
         bottom: 22px;
         left: 0; }
-      .top-header .menu a:last-child::after {
+      .top-header .menu#navbar-normal a:last-child::after {
         content: "";
         width: 1px;
         height: 40px;
@@ -96,6 +99,8 @@ body {
         position: relative;
         bottom: 22px;
         left: 0; }
+  .top-header .menu#navbar-respon {
+    display: none; }
 
 .bottom-header {
   position: relative;
@@ -278,11 +283,12 @@ body {
   #contact #page-top {
     width: 80px;
     height: 80px;
-    background-color: #0f5c9b;
+    background-color: transparent;
     position: relative;
     left: 90%;
     bottom: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    border-top: 1px solid #f5deb36b; }
     #contact #page-top .icon-up, #contact #page-top .text-page-top {
       position: absolute;
       top: 23px;
@@ -328,14 +334,25 @@ body {
 
   body {
     width: 100%;
+    min-width: auto;
     border-top: 10px solid #0f5c9b; }
 
   .top-header {
-    height: 88px;
+    height: 60px;
     width: 100%;
     margin-top: 9px; }
     .top-header .header .left {
       margin-left: 18px; }
+      .top-header .header .left .logo-img img {
+        width: 21px; }
+      .top-header .header .left .logo-text {
+        margin-left: 15px; }
+        .top-header .header .left .logo-text img.responsive {
+          display: block;
+          width: 121px;
+          margin-top: 7px; }
+        .top-header .header .left .logo-text img.normal {
+          display: none; }
     .top-header .header .right {
       display: none; }
     .top-header .header .open-respon {
@@ -345,48 +362,51 @@ body {
         width: 40px;
         height: 40px;
         margin-right: 10px; }
-
-  .menu {
-    transition: .5s;
-    width: 0 !important; }
-
-  .menu.responsive {
-    height: 420px;
-    display: block;
-    margin-top: 10px;
-    width: 64% !important;
-    position: relative;
-    z-index: 100;
-    animation: hienra .5s forwards; }
-    .menu.responsive .over {
-      width: 100%;
+      .top-header .header .open-respon #close-button {
+        display: none; }
+    .top-header .menu#navbar-normal {
+      display: none !important; }
+    .top-header .menu#navbar-respon {
       height: 420px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 10;
-      background: #fffafa; }
-    .menu.responsive a {
       display: block;
-      border-bottom: 1px dashed #dac8a542; }
-      .menu.responsive a img {
-        border-bottom: 0px;
-        z-index: 1001; }
-        .menu.responsive a img:hover {
-          background-color: transparent; }
-      .menu.responsive a::before {
-        width: 0;
-        height: 0; }
-      .menu.responsive a:last-child::after {
-        width: 0;
-        height: 0; }
-      .menu.responsive a:visited {
-        background-color: lightblue; } }
+      margin-top: 10px;
+      width: 0%;
+      background: grey;
+      position: relative;
+      z-index: 100;
+      transition: 0.5s;
+      margin-top: -18px; }
+      .top-header .menu#navbar-respon .over {
+        width: 100%;
+        height: 420px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background: #fffafa; }
+      .top-header .menu#navbar-respon a {
+        display: block;
+        width: 100%;
+        border-bottom: 1px dashed #dac8a542; }
+        .top-header .menu#navbar-respon a img {
+          width: 0%;
+          border-bottom: 0px;
+          z-index: 1001; }
+          .top-header .menu#navbar-respon a img:hover {
+            background-color: transparent; }
+        .top-header .menu#navbar-respon a::before {
+          width: 0;
+          height: 0; }
+        .top-header .menu#navbar-respon a:last-child::after {
+          width: 0;
+          height: 0; }
+        .top-header .menu#navbar-respon a:active {
+          background-color: lightblue; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }
   100% {
-    width: 64%; } }
+    width: 100%; } }
 @-webkit-keyframes divao {
   0% {
     width: 64%; }
