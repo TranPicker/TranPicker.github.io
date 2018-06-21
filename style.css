@@ -4,6 +4,10 @@
 @font-face {
   font-family: "Meiryo-b";
   src: url("fonts/meiryob.ttc"); }
+@font-face {
+  font-family: "HiraKakuProN-W6";
+  src: url("fonts/HiraKakuProN-W6.otf");
+  font-weight: W6; }
 * {
   margin: 0;
   padding: 0;
@@ -367,41 +371,45 @@ body {
     .top-header .menu#navbar-normal {
       display: none !important; }
     .top-header .menu#navbar-respon {
-      height: 420px;
+      height: 524px;
       display: block;
       margin-top: 10px;
       width: 0%;
-      background: grey;
       position: relative;
       z-index: 100;
       transition: 0.5s;
-      margin-top: -18px; }
+      margin-top: -18px;
+      overflow: hidden; }
       .top-header .menu#navbar-respon .over {
         width: 100%;
-        height: 420px;
+        height: 524px;
         position: absolute;
         left: 0;
         top: 0;
         z-index: 10;
-        background: #fffafa; }
-      .top-header .menu#navbar-respon a {
+        background: #0f5c9b;
+        padding-top: 30px;
+        padding-left: 25px; }
+      .top-header .menu#navbar-respon .navbar-item {
         display: block;
-        width: 100%;
-        border-bottom: 1px dashed #dac8a542; }
-        .top-header .menu#navbar-respon a img {
-          width: 0%;
-          border-bottom: 0px;
-          z-index: 1001; }
-          .top-header .menu#navbar-respon a img:hover {
-            background-color: transparent; }
-        .top-header .menu#navbar-respon a::before {
-          width: 0;
-          height: 0; }
-        .top-header .menu#navbar-respon a:last-child::after {
-          width: 0;
-          height: 0; }
-        .top-header .menu#navbar-respon a:active {
-          background-color: lightblue; } }
+        padding: 15px 0;
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed white;
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        position: relative; }
+        .top-header .menu#navbar-respon .navbar-item .icon {
+          height: 7px;
+          width: auto;
+          margin-right: 10px;
+          position: absolute;
+          left: 1px;
+          top: 50%;
+          transform: translateY(-50%); }
+        .top-header .menu#navbar-respon .navbar-item p {
+          display: inline-block;
+          margin-left: 15px; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }

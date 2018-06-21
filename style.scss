@@ -4,6 +4,10 @@
 @font-face {
   font-family: "Meiryo-b";
   src: url("fonts/meiryob.ttc"); }
+  @font-face {
+  font-family: "HiraKakuProN-W6";
+  src: url("fonts/HiraKakuProN-W6.otf");
+  font-weight: W6; }
  
 *{margin: 0;padding: 0;box-sizing: border-box;  }
 body{
@@ -457,53 +461,53 @@ body{
 			display: none!important;
 		}
 		.menu#navbar-respon{
-		    height: 420px;
+		    height: 524px;
 		    display: block;
 		    margin-top: 10px;
 		    width: 0%;
-		    background:grey;
 		    position: relative;
 		    z-index: 100;
 		    transition:0.5s;
 		    margin-top: -18px;;
+		    overflow: hidden;
 		    // animation: hienra .5s forwards;
 		.over{
 			    width: 100%;
-			    height: 420px;
+			    height: 524px;
 			    position: absolute;
 			    left: 0;
 			    top: 0;
 			    z-index: 10;
-			    background: #fffafa;
+			    background: #0f5c9b;
+			    padding-top: 30px;
+			    padding-left:25px;
 		}
-		a{
-			    display: block;
-			    width: 100%;;
-			    border-bottom: 1px dashed #dac8a542;
-			img{
-					width: 0%;
-				    border-bottom: 0px;
-				    z-index: 1001;
-				    &:hover{
-					background-color: transparent;
-				}
-				
+		.navbar-item{
+			display: block;
+			padding:15px 0;
+			border-top:1px dashed white;
+			border-bottom:1px dashed white;
+			text-decoration: none;
+			font-size:15px;
+			color: #fff;
+			position: relative;
+			.icon{
+				height: 7px;
+				width: auto;
+				margin-right:10px;
+				position: absolute;
+			    left: 1px;
+			    top: 50%;
+			    transform: translateY(-50%);
+
 			}
-			&::before{
-				
-			    width: 0;
-			    height: 0;
-			   
+			p{
+
+				// font-family: Hiragino Kaku Gothic Pro;
+				display: inline-block;
+				margin-left: 15px
 			}
-			&:last-child::after{
-			    width: 0;
-			    height: 0;
-			}
-			&:active{
-					background-color: lightblue;
-				}
 		}
-		
 	}
 
 	}
