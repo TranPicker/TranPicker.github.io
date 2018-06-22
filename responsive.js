@@ -1,3 +1,4 @@
+
 function openNav(){
 	// doi button
 	document.getElementById("open-button").style.display= "none";

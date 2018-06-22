@@ -10,6 +10,9 @@
   font-weight: W6; }
  
 *{margin: 0;padding: 0;box-sizing: border-box;  }
+html{
+	font-size: 10px;
+}
 body{
 	min-width: 950px;
 	margin: auto;
@@ -24,7 +27,7 @@ body{
 	}
 	.date-time{
 		font-family: "Meiryo-r";
-		font-size:10px;
+		font-size:1rem;
 		color:black;
 		margin-left:3px;
 		margin-top:6px;
@@ -73,10 +76,10 @@ body{
 			padding-top: 17px;
 			.phone-contact{
 				img{
-					height:25px;
+					margin-top: 1px;
 				}
 				.date-time{
-					font-size:10px;
+					font-size:1rem;
 				}
 			}
 		}
@@ -171,6 +174,9 @@ body{
 			width:177px;
 			margin:41px 0px  0px 62px;
 			float:left;
+			#title-news-res{
+				display: none;
+			}
 			.btn-news{
 				background-color: #578db9;
 				display: inline-block;
@@ -181,6 +187,9 @@ body{
 					margin-right:10px;
 					margin-top:-1px;
 					transform:translateY(-3px);
+				}
+				#text-btn-news-res{
+					display: none;
 				}
 			}
 			&::after{
@@ -196,7 +205,7 @@ body{
 		}
 		.right{
 			font-family: "Meiryo-r";
-			font-size:16px;
+			font-size:1.6rem;
 			display: inline-block;
 			margin:38px 0 0 39px;
 			.one-news{
@@ -204,14 +213,14 @@ body{
 				.date{
 					color:#0e5b9a;
 					float:left;
-					font-size:16px;
+					font-size:1.6rem;
 					margin-right: 6px;
 					line-height: 24px;
 				}
 				.td-news{
 					border-bottom: 1px solid #676767 ;
 					display: inline-block;
-					font-size:16px;
+					font-size:1.6rem;
 					a{
 						text-decoration:none;
 						color:#000;
@@ -240,7 +249,7 @@ body{
 		}
 		p{
 			width: 422px;
-			font-size:16px;
+			font-size:1.6rem;
 			line-height: 22.4px;
 			color:#555555;
 			margin:auto;
@@ -295,7 +304,7 @@ body{
 	}
 	.right{
 		width: 940px;;
-		font-size:1rem;
+		font-size:1.6rem;
 		color:#545454;
 		.img-title{
 			margin-top:81px;
@@ -322,7 +331,7 @@ body{
 		margin-bottom:27px;
 	}
 	.description{
-		font-size:1rem;
+		font-size:1.6rem;
 		text-align:center;
 		color:#fff;
 		margin-bottom: 34px;
@@ -341,7 +350,7 @@ body{
 				margin-right:8px;
 			}
 			.date-time{
-				font-size:12px;
+				font-size:1.2rem;
 				color:#fff;
 				word-spacing:2px;
 			}
@@ -353,7 +362,7 @@ body{
 				margin-right:13px;
 			}
 			.mail{
-				font-size:16px;
+				font-size:1.2rem;
 			}
 		}
 	}
@@ -388,7 +397,7 @@ body{
 		padding-top:36px;
 		// line-height:23.8px;
 		a{
-			font-size: 14px;
+			font-size: 1.4rem;
 			text-transform:uppercase;
 			color:#222222;
 			text-decoration: none;
@@ -408,7 +417,7 @@ body{
 .bottom-footer{
 	height: 51px;
 	font-family: "Meiryo-r";
-	font-size:14px;
+	font-size:1.4rem;
 	color:#212121;
 	text-align:center;
 	padding-top:20px;
@@ -492,7 +501,7 @@ body{
 			border-top:1px dashed white;
 			border-bottom:1px dashed white;
 			text-decoration: none;
-			font-size:15px;
+			font-size:1.5rem;
 			color: #fff;
 			position: relative;
 			margin-right:25px;
@@ -524,6 +533,59 @@ body{
 		#img-for-text-res{
 			display:block;
 			width: 268px;
+		}
+	} //end bottom header
+
+	#news{
+		padding-top: 25px ;
+		.nd-news{
+			width: 284px;
+			height: 321px;
+			.left{
+				    margin: auto;
+				    margin-top: 20px;
+					float: none;
+					text-align: center;
+					height: 34px;
+
+				.title{
+					#title-news{
+						display: none;
+					}
+					#title-news-res{
+						display: block;
+						width: 76px;;
+						margin: auto;
+					}
+					.btn-news{
+						padding: 8px 28px 9px 9px;
+						transform: translateY(203px);
+						#text-btn-news{
+							display: none;
+						}
+						#text-btn-news-res{
+							display: inline-block;
+							width: 72.5px;
+
+						}
+					}
+				}
+				&::after{
+					width: 0px;
+				}
+			} //end left
+			.right{
+				margin:0px;
+				// font-family:Hiragino Kaku Gothic Pro;
+				font-size:1.4rem;
+				.one-news{
+					.date{
+						display: inline-block;
+					}
+				}
+
+
+			}
 		}
 	}
 
