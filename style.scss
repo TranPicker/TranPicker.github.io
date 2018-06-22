@@ -576,15 +576,27 @@ body{
 			} //end left
 			.right{
 				margin:0px;
+				margin-top: 17px;
 				// font-family:Hiragino Kaku Gothic Pro;
-				font-size:1.4rem;
 				.one-news{
+					padding: 11px 0 10px 4px;
+					margin:0px 0 0 13px;
+					width: 255px;
+					border-top:1px dashed #cccccc;
 					.date{
-						display: inline-block;
+						display: block;
+						float:none;
+						font-size:1.4rem;
 					}
+					.td-news{
+						display: inline-block;
+						font-size:1.4rem;
+					}
+					&:last-child{
+						border-bottom:1px dashed #cccccc;
+					}
+
 				}
-
-
 			}
 		}
 	}

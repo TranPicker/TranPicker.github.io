@@ -459,9 +459,21 @@ body {
           width: 0px; }
       #news .nd-news .right {
         margin: 0px;
-        font-size: 1.4rem; }
-        #news .nd-news .right .one-news .date {
-          display: inline-block; } }
+        margin-top: 17px; }
+        #news .nd-news .right .one-news {
+          padding: 11px 0 10px 4px;
+          margin: 0px 0 0 13px;
+          width: 255px;
+          border-top: 1px dashed #cccccc; }
+          #news .nd-news .right .one-news .date {
+            display: block;
+            float: none;
+            font-size: 1.4rem; }
+          #news .nd-news .right .one-news .td-news {
+            display: inline-block;
+            font-size: 1.4rem; }
+          #news .nd-news .right .one-news:last-child {
+            border-bottom: 1px dashed #cccccc; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }
