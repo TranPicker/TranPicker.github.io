@@ -241,14 +241,20 @@ body{
 		margin-bottom: 65px;;
 		.text-jp{
 			display: inline-block;
-			margin-bottom: 15px;
+			// margin-bottom: 15px;
+		}
+		#text-jp-res{
+			display: none;
+		}
+		#text-en-res{
+			display: none;
 		}
 		.text-en{
 			display: inline-block;
 			margin-bottom: 40px;;
 		}
 		p{
-			width: 422px;
+			width: 432px;
 			font-size:1.6rem;
 			line-height: 22.4px;
 			color:#555555;
@@ -291,6 +297,9 @@ body{
 			}
 		}
 	} //end css product
+	#product-responsive{
+		display: none;
+	}
 } //end construction
 
 #overview{
@@ -538,6 +547,7 @@ body{
 
 	#news{
 		padding-top: 25px ;
+		padding-bottom: 30px;
 		.nd-news{
 			width: 284px;
 			height: 321px;
@@ -547,7 +557,6 @@ body{
 					float: none;
 					text-align: center;
 					height: 34px;
-
 				.title{
 					#title-news{
 						display: none;
@@ -579,10 +588,11 @@ body{
 				margin-top: 17px;
 				// font-family:Hiragino Kaku Gothic Pro;
 				.one-news{
-					padding: 11px 0 10px 4px;
+					padding: 7px 0 10px 4px;
 					margin:0px 0 0 13px;
 					width: 255px;
 					border-top:1px dashed #cccccc;
+					line-height: 13px;;
 					.date{
 						display: block;
 						float:none;
@@ -596,6 +606,100 @@ body{
 						border-bottom:1px dashed #cccccc;
 					}
 
+				}
+			}
+		}
+	} //end css news
+	#construction{
+		height: 333px;
+		padding-top: 14.5px;
+		.title{
+			margin-bottom: 22.5px;;
+			#text-jp{
+				display: none;
+			}
+			#text-en{
+				display: none;
+			}
+			#text-jp-res{
+				display: inline-block;
+				width: 185px;
+				margin-bottom: 7px;
+			}
+			#text-en-res{
+				display: inline-block;
+				width: 85.5px;
+				margin-bottom: 20px;;
+			}
+			p{
+				// font-family: Hiragino Kaku Gothic Pro;
+				font-size: 1.4rem;
+				width: 335px;
+			}
+
+		} //end title
+		#product{
+			display: none;
+		}
+		.product#product-responsive{
+			display: block;
+			width: 290px;
+			height: 92.5px;
+			.one-product{
+				margin-right: 10px;
+				width: 90px;
+				height: 92.5px;
+				background-size: cover;
+				.content{
+					width: 100%;
+					height: 100%;
+					background:transparent;
+					transform: translateY(0);
+					.pro-img{
+						bottom: 52.5px;
+					}
+					.pro-name{
+						bottom: 34.5px;
+					}
+					.more-btn{
+						bottom: 11.5px;
+						img{
+							width: 42.5px;
+						}
+					}
+				}
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+			#home{
+				.content{
+					.pro-img{
+						width: 33px;
+					}
+					.pro-name{
+						width: 30px;
+					}
+				}
+			}
+			#small-company{
+				.content{
+					.pro-img{
+						width: 33px;
+					}
+					.pro-name{
+						width: 37.5px;
+					}
+				}
+			}
+			#big-company{
+				.content{
+					.pro-img{
+						width: 30px;
+					}
+					.pro-name{
+						width: 45px;
+					}
 				}
 			}
 		}

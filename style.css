@@ -195,13 +195,16 @@ body {
     text-align: center;
     margin-bottom: 65px; }
     #construction .title .text-jp {
-      display: inline-block;
-      margin-bottom: 15px; }
+      display: inline-block; }
+    #construction .title #text-jp-res {
+      display: none; }
+    #construction .title #text-en-res {
+      display: none; }
     #construction .title .text-en {
       display: inline-block;
       margin-bottom: 40px; }
     #construction .title p {
-      width: 422px;
+      width: 432px;
       font-size: 1.6rem;
       line-height: 22.4px;
       color: #555555;
@@ -235,6 +238,8 @@ body {
           bottom: 34px; }
       #construction .product .one-product:last-child {
         margin-right: 0px; }
+  #construction #product-responsive {
+    display: none; }
 
 #overview {
   width: 950px;
@@ -431,7 +436,8 @@ body {
       width: 268px; }
 
   #news {
-    padding-top: 25px; }
+    padding-top: 25px;
+    padding-bottom: 30px; }
     #news .nd-news {
       width: 284px;
       height: 321px; }
@@ -461,10 +467,11 @@ body {
         margin: 0px;
         margin-top: 17px; }
         #news .nd-news .right .one-news {
-          padding: 11px 0 10px 4px;
+          padding: 7px 0 10px 4px;
           margin: 0px 0 0 13px;
           width: 255px;
-          border-top: 1px dashed #cccccc; }
+          border-top: 1px dashed #cccccc;
+          line-height: 13px; }
           #news .nd-news .right .one-news .date {
             display: block;
             float: none;
@@ -473,7 +480,66 @@ body {
             display: inline-block;
             font-size: 1.4rem; }
           #news .nd-news .right .one-news:last-child {
-            border-bottom: 1px dashed #cccccc; } }
+            border-bottom: 1px dashed #cccccc; }
+
+  #construction {
+    height: 333px;
+    padding-top: 14.5px; }
+    #construction .title {
+      margin-bottom: 22.5px; }
+      #construction .title #text-jp {
+        display: none; }
+      #construction .title #text-en {
+        display: none; }
+      #construction .title #text-jp-res {
+        display: inline-block;
+        width: 185px;
+        margin-bottom: 7px; }
+      #construction .title #text-en-res {
+        display: inline-block;
+        width: 85.5px;
+        margin-bottom: 20px; }
+      #construction .title p {
+        font-size: 1.4rem;
+        width: 335px; }
+    #construction #product {
+      display: none; }
+    #construction .product#product-responsive {
+      display: block;
+      width: 290px;
+      height: 92.5px; }
+      #construction .product#product-responsive .one-product {
+        margin-right: 10px;
+        width: 90px;
+        height: 92.5px;
+        background-size: cover; }
+        #construction .product#product-responsive .one-product .content {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          transform: translateY(0); }
+          #construction .product#product-responsive .one-product .content .pro-img {
+            bottom: 52.5px; }
+          #construction .product#product-responsive .one-product .content .pro-name {
+            bottom: 34.5px; }
+          #construction .product#product-responsive .one-product .content .more-btn {
+            bottom: 11.5px; }
+            #construction .product#product-responsive .one-product .content .more-btn img {
+              width: 42.5px; }
+        #construction .product#product-responsive .one-product:last-child {
+          margin-right: 0; }
+      #construction .product#product-responsive #home .content .pro-img {
+        width: 33px; }
+      #construction .product#product-responsive #home .content .pro-name {
+        width: 30px; }
+      #construction .product#product-responsive #small-company .content .pro-img {
+        width: 33px; }
+      #construction .product#product-responsive #small-company .content .pro-name {
+        width: 37.5px; }
+      #construction .product#product-responsive #big-company .content .pro-img {
+        width: 30px; }
+      #construction .product#product-responsive #big-company .content .pro-name {
+        width: 45px; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }
