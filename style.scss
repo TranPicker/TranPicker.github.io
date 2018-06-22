@@ -307,9 +307,23 @@ body{
 	height: 404px;
 	margin:auto;
 	.left{
-		margin-left: -29px;
+		margin: 48px 64px 0 -29px;
 		float: left;
-		margin-right: 64px;
+		width: 448px;
+		height: 404px;
+		position: relative;
+		.view-people{
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: 100;
+		}
+		.view-logo{
+			position: absolute;
+			bottom:122px;
+			right:0;
+			z-index: 101;
+		}
 	}
 	.right{
 		width: 940px;;
