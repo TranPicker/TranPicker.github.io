@@ -254,7 +254,7 @@ body {
     #overview .left .view-people {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -30px;
       z-index: 100; }
     #overview .left .view-logo {
       position: absolute;
