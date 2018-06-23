@@ -32,3 +32,9 @@ function closeNav(){
 function changeWidth(obj,w){
 	obj.style.width = w;
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function gotoTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

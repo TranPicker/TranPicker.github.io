@@ -364,12 +364,12 @@ body {
   text-align: center;
   padding-top: 20px; }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   * {
     margin: 0; }
 
   body {
-    min-width: 768px;
+    min-width: 100%;
     width: 100%;
     min-width: auto;
     border-top: 5px solid #0f5c9b; }
@@ -663,7 +663,12 @@ body {
     #sub-menu .wid1 {
       padding-top: 20px; }
     #sub-menu .wid2 {
-      padding-bottom: 17px; } }
+      padding-bottom: 17px; }
+
+  .bottom-footer {
+    height: 44px;
+    padding-top: 15.5px;
+    font-size: 1rem; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }
