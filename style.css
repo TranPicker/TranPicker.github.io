@@ -270,7 +270,10 @@ body {
       margin-bottom: 32px; }
     #overview .right .description {
       line-height: 21px;
-      margin-bottom: 34px; }
+      margin-bottom: 32px;
+      width: 910px; }
+    #overview .right #text-title-vision-res {
+      display: none; }
 
 #contact {
   height: 358px;
@@ -551,7 +554,31 @@ body {
       #construction .product#product-responsive #big-company .content .pro-img {
         width: 30px; }
       #construction .product#product-responsive #big-company .content .pro-name {
-        width: 45px; } }
+        width: 45px; }
+
+  #overview {
+    width: 320px;
+    height: 443px;
+    overflow: hidden; }
+    #overview .left {
+      width: 278px;
+      height: 178px;
+      margin: 0 0 0 3px;
+      float: none; }
+      #overview .left .view-people {
+        width: 224.5px;
+        height: 178px;
+        left: 0; }
+      #overview .left .view-logo {
+        width: 68.5px;
+        height: 80px;
+        bottom: 30px; }
+    #overview .right #text-title-vision-res {
+      display: block;
+      width: 286px;
+      margin: 0; }
+    #overview .right #text-title-vision {
+      display: none; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }
