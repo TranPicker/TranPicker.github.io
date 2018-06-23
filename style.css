@@ -45,7 +45,7 @@ body {
     display: inline-block;
     font-family: Meiryo-b;
     color: #fd7e00;
-    font-size: 14px; }
+    font-size: 1.4rem; }
 
 .top-header {
   width: 950px;
@@ -274,6 +274,8 @@ body {
       width: 910px; }
     #overview .right #text-title-vision-res {
       display: none; }
+    #overview .right #btn-text {
+      display: none; }
 
 #contact {
   height: 358px;
@@ -288,6 +290,8 @@ body {
     margin: auto;
     padding: 17px 60px 17px 54px;
     margin-bottom: 27px; }
+    #contact .title-contact img {
+      width: 364px; }
   #contact .description {
     font-size: 1.6rem;
     text-align: center;
@@ -298,8 +302,6 @@ body {
   #contact .detail-contact {
     width: 680px;
     margin: auto; }
-    #contact .detail-contact .phone-contact img {
-      height: 27px; }
     #contact .detail-contact .phone-contact .phone-icon {
       margin-right: 8px; }
     #contact .detail-contact .phone-contact .date-time {
@@ -309,7 +311,7 @@ body {
     #contact .detail-contact .mail-contact {
       padding: 17px 21px 17px 20px;
       margin-left: 62px; }
-      #contact .detail-contact .mail-contact img {
+      #contact .detail-contact .mail-contact .mail-icon {
         margin-right: 13px; }
       #contact .detail-contact .mail-contact .mail {
         font-size: 1.2rem; }
@@ -331,14 +333,13 @@ body {
       top: 42px; }
 
 #sub-menu {
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  height: 120px; }
   #sub-menu .wid {
     font-family: "Meiryo-r";
     width: 647px;
-    height: 120px;
     text-align: center;
-    margin: auto;
-    padding-top: 36px; }
+    margin: auto; }
     #sub-menu .wid a {
       font-size: 1.4rem;
       text-transform: uppercase;
@@ -352,6 +353,8 @@ body {
         border-left: 1px solid #5e5e5e; }
       #sub-menu .wid a:nth-child(6) {
         border-left: 1px solid #5e5e5e; }
+  #sub-menu .wid1 {
+    padding-top: 41px; }
 
 .bottom-footer {
   height: 51px;
@@ -558,9 +561,9 @@ body {
 
   #overview {
     width: 320px;
-    height: 443px;
-    overflow: hidden; }
+    height: 443px; }
     #overview .left {
+      transform: translate(2px, 265px);
       width: 278px;
       height: 178px;
       margin: 0 0 0 3px;
@@ -573,12 +576,94 @@ body {
         width: 68.5px;
         height: 80px;
         bottom: 30px; }
-    #overview .right #text-title-vision-res {
-      display: block;
-      width: 286px;
-      margin: 0; }
-    #overview .right #text-title-vision {
-      display: none; } }
+    #overview .right {
+      transform: translateY(-179px); }
+      #overview .right #text-title-vision-res {
+        display: block;
+        width: 290px;
+        margin: 30px 0 21px 15px; }
+      #overview .right #text-title-vision {
+        display: none; }
+      #overview .right .description {
+        width: 258px;
+        text-align: center;
+        margin: 0 0 21px 30px;
+        line-height: 20px; }
+        #overview .right .description p {
+          font-size: 1.4rem;
+          color: 535353; }
+      #overview .right .btn {
+        margin-left: 21px; }
+        #overview .right .btn #btn-text {
+          display: inline-block;
+          padding: 13.5px 16.5px 14.5px 16px;
+          background: #0f5c9b;
+          color: white;
+          font-family: "Meiryo-b";
+          font-size: 1.3rem; }
+          #overview .right .btn #btn-text .icon-left {
+            height: 7px;
+            margin: 0 6px 1px 0; }
+        #overview .right .btn #btn-img {
+          display: none; }
+
+  #contact {
+    height: 348px;
+    padding-top: 35.1px; }
+    #contact .title-contact {
+      width: 288px;
+      height: 33px;
+      padding: 9px 23px;
+      margin-bottom: 19px; }
+      #contact .title-contact img {
+        width: 242px; }
+    #contact .description {
+      font-size: 1.4rem;
+      margin-bottom: 29px; }
+    #contact .detail-contact {
+      width: 250px;
+      height: 99px; }
+      #contact .detail-contact .phone-contact {
+        margin: auto;
+        transform: translate(-22px, -40px); }
+        #contact .detail-contact .phone-contact .phone-icon {
+          width: 25px;
+          margin-right: 5px; }
+        #contact .detail-contact .phone-contact .phone-number {
+          width: 164px; }
+        #contact .detail-contact .phone-contact .date-time {
+          font-size: 1rem;
+          word-spacing: -4px;
+          margin-top: 5px;
+          margin-left: -2px; }
+      #contact .detail-contact .mail-contact {
+        width: 250px;
+        height: 40px;
+        padding: 14px 23px;
+        margin: 0;
+        transform: translateY(59px); }
+        #contact .detail-contact .mail-contact .mail-icon {
+          width: 14.5px;
+          margin-right: 5px; }
+        #contact .detail-contact .mail-contact .mail {
+          font-size: 1.3rem; }
+    #contact #page-top {
+      display: none; }
+
+  #sub-menu {
+    height: 100px;
+    width: 100%;
+    line-height: 12px; }
+    #sub-menu .wid {
+      width: 350px; }
+      #sub-menu .wid a {
+        font-size: 1rem;
+        color: #212121;
+        padding: 0 12px; }
+    #sub-menu .wid1 {
+      padding-top: 20px; }
+    #sub-menu .wid2 {
+      padding-bottom: 17px; } }
 @-webkit-keyframes hienra {
   0% {
     width: 0%; }
