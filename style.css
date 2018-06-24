@@ -1,17 +1,32 @@
+@charset "UTF-8";
 @font-face {
-  font-family: "Meiryo-r";
-  src: url("fonts/meiryo.ttc"); }
+  font-family: "Meiryo";
+  src: url("fonts/meiryo.ttc");
+  src: url("fonts/meiryo.eot?#iefix") format("embedded-opentype"), url("fonts/meiryo.woff2") format("woff2"), url("fonts/meiryo.woff") format("woff"), url("fonts/meiryo.ttf") format("truetype"), url("fonts/meiryo.svg#meiryo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: "Meiryo-b";
-  src: url("fonts/meiryob.ttc"); }
+  font-family: "Meiryo";
+  src: url("fonts/meiryob.ttc");
+  /* IE9 Compat Modes */
+  src: url("fonts/meiryob.eot?#iefix") format("embedded-opentype"), url("fonts/meiryob.woff2") format("woff2"), url("fonts/meiryob.woff") format("woff"), url("fonts/meiryob.ttf") format("truetype"), url("fonts/meiryob.svg#fonts/meiryob") format("svg");
+  /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+  font-weight: bold; }
 @font-face {
-  font-family: "HiraKakuProN-W6";
+  font-family: "Hiragino Kaku Gothic Pro";
   src: url("fonts/HiraKakuProN-W6.otf");
-  font-weight: 600; }
+  /* IE9 Compat Modes */
+  src: url("fonts/HiraKakuProN-W6.eot?#iefix") format("embedded-opentype"), url("fonts/HiraKakuProN-W6.woff2") format("woff2"), url("fonts/HiraKakuProN-W6.woff") format("woff"), url("fonts/HiraKakuProN-W6.ttf") format("truetype"), url("fonts/HiraKakuProN-W6.svg#HiraKakuProN-W6") format("svg");
+  font-weight: 600;
+  font-style: normal; }
 @font-face {
-  font-family: "HiraKakuProN";
+  font-family: "Hiragino Kaku Gothic Pro";
   src: url("fonts/HiraKakuProN-W3.otf");
-  font-weight: 300; }
+  src: url("fonts/HiraKakuProN-W3.eot?#iefix") format("embedded-opentype"), url("fonts/HiraKakuProN-W3.woff2") format("woff2"), url("fonts/HiraKakuProN-W3.woff") format("woff"), url("fonts/HiraKakuProN-W3.ttf") format("truetype"), url("fonts/HiraKakuProN-W3.svg#HiraKakuProN-W3") format("svg");
+  font-weight: 300;
+  font-style: normal; }
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +38,7 @@ html {
 body {
   min-width: 950px;
   margin: auto;
-  font-family: "Meiryo-b";
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   border-top: 4px solid #0f5c9b; }
 
 .phone-contact {
@@ -32,7 +47,7 @@ body {
   .phone-contact .phone-icon {
     margin-right: 6px; }
   .phone-contact .date-time {
-    font-family: "Meiryo-r";
+    font-family: Meiryo;
     font-size: 1rem;
     color: black;
     margin-left: 3px;
@@ -47,7 +62,7 @@ body {
   margin-left: 22px; }
   .mail-contact .mail {
     display: inline-block;
-    font-family: Meiryo-b;
+    font-family: Meiryo;
     color: #fd7e00;
     font-size: 1.4rem; }
 
@@ -171,7 +186,7 @@ body {
         left: 100%;
         top: -100px; }
     #news .nd-news .right {
-      font-family: "Meiryo-r";
+      font-family: Meiryo;
       font-size: 1.6rem;
       display: inline-block;
       margin: 38px 0 0 39px; }
@@ -340,7 +355,7 @@ body {
   background-color: #cccccc;
   height: 120px; }
   #sub-menu .wid {
-    font-family: "Meiryo-r";
+    font-family: Meiryo;
     width: 647px;
     text-align: center;
     margin: auto; }
@@ -362,7 +377,7 @@ body {
 
 .bottom-footer {
   height: 51px;
-  font-family: "Meiryo-r";
+  font-family: Meiryo;
   font-size: 1.4rem;
   color: #212121;
   text-align: center;
@@ -446,6 +461,8 @@ body {
           top: 50%;
           transform: translateY(-50%); }
         .top-header .menu#navbar-respon .navbar-item p {
+          font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+          font-weight: 600;
           display: inline-block;
           margin-left: 15px; }
 
@@ -487,7 +504,9 @@ body {
           width: 0px; }
       #news .nd-news .right {
         margin: 0px;
-        margin-top: 17px; }
+        margin-top: 17px;
+        font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+        font-weight: 300; }
         #news .nd-news .right .one-news {
           padding: 7px 0 10px 4px;
           margin: 0px 0 0 13px;
@@ -522,6 +541,8 @@ body {
         width: 85.5px;
         margin-bottom: 20px; }
       #construction .title p {
+        font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+        font-weight: 300;
         font-size: 1.4rem;
         width: 335px; }
     #construction #product {
@@ -594,6 +615,8 @@ body {
         margin: 0 0 21px 30px;
         line-height: 20px; }
         #overview .right .description p {
+          font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+          font-weight: 300;
           font-size: 1.4rem;
           color: 535353; }
       #overview .right .btn {
@@ -603,7 +626,8 @@ body {
           padding: 13.5px 16.5px 14.5px 16px;
           background: #0f5c9b;
           color: white;
-          font-family: "Meiryo-b";
+          font-family: "Meiryo";
+          font-weight: bold;
           font-size: 1.3rem; }
           #overview .right .btn #btn-text .icon-left {
             height: 7px;
@@ -622,6 +646,8 @@ body {
       #contact .title-contact img {
         width: 242px; }
     #contact .description {
+      font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+      font-weight: 300;
       font-size: 1.4rem;
       margin-bottom: 29px; }
     #contact .detail-contact {
@@ -636,6 +662,8 @@ body {
         #contact .detail-contact .phone-contact .phone-number {
           width: 164px; }
         #contact .detail-contact .phone-contact .date-time {
+          font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+          font-weight: 300;
           font-size: 1rem;
           word-spacing: -4px;
           margin-top: 5px;
@@ -661,6 +689,8 @@ body {
     #sub-menu .wid {
       width: 350px; }
       #sub-menu .wid a {
+        font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+        font-weight: 300;
         font-size: 1rem;
         color: #212121;
         padding: 0 12px; }
@@ -670,6 +700,8 @@ body {
       padding-bottom: 17px; }
 
   .bottom-footer {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    font-weight: 300;
     height: 44px;
     padding-top: 15.5px;
     font-size: 1rem; } }
