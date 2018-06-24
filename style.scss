@@ -18,8 +18,7 @@
         url('fonts/meiryob.ttf') format('truetype'),/* Safari, Android, iOS */
         url('fonts/meiryob.svg#fonts/meiryob') format('svg');/* Legacy iOS */
     font-weight: bold;
-    font-style: normal;
-  font-weight: bold; }
+    font-style: normal;}
   @font-face {
   font-family: "Hiragino Kaku Gothic Pro";
   src: url("fonts/HiraKakuProN-W6.otf");/* IE9 Compat Modes */
@@ -58,7 +57,7 @@ body{
 		margin-right:6px;
 	}
 	.date-time{
-		font-family: Meiryo;
+		font-family: "Meiryo";
 		font-size:1rem;
 		color:black;
 		margin-left:3px;
@@ -74,10 +73,9 @@ body{
 	margin-left:22px;
 	.mail{
 		display:inline-block;
-		font-family: Meiryo ;
+		font-family: "Meiryo" ;
 		color:#fd7e00;
 		font-size:1.4rem;
-
 	}
 }
 .top-header{
@@ -112,6 +110,16 @@ body{
 				}
 				.date-time{
 					font-size:1rem;
+					word-spacing: 2px;
+				}
+			}
+			.mail-contact{
+
+				font-family: "Meiryo";
+				font-weight: bold;
+				img {
+					transform: translateY(2px);
+				    margin-right: 8px;
 				}
 			}
 		}
@@ -131,11 +139,10 @@ body{
 			img{
 				max-width:100%;
 				padding:15px 0px 20px 0px;
-				// background-color: #ffcaca;
 				border-bottom: 4px solid #dddddd;
-				&:hover{
-					background-color: #ffcaca;
-				}
+				// &:hover{
+				// 	background-color: #ffcaca;
+				// }
 			}
 			&::before{
 				content: "";
@@ -236,7 +243,7 @@ body{
 			}
 		}
 		.right{
-			font-family: Meiryo;
+			font-family: "Meiryo";
 			font-size:1.6rem;
 			display: inline-block;
 			margin:38px 0 0 39px;
@@ -287,6 +294,7 @@ body{
 		}
 		p{
 			width: 432px;
+			font-family: "Meiryo", sans-serif;
 			font-size:1.6rem;
 			line-height: 22.4px;
 			color:#555555;
@@ -359,13 +367,15 @@ body{
 	}
 	.right{
 		width: 940px;;
-		font-size:1.6rem;
-		color:#545454;
+
 		.img-title{
 			margin-top:81px;
 			margin-bottom: 32px;
 		}
 		.description{
+			font-family: "Meiryo", sans-serif;
+			font-size:1.6rem;
+			color:#545454;
 			line-height:21px;
 			margin-bottom: 32px;
 			width: 910px;
@@ -397,6 +407,7 @@ body{
 	}
 	.description{
 		font-size:1.6rem;
+		font-family: "Meiryo";
 		text-align:center;
 		color:#fff;
 		margin-bottom: 34px;
@@ -414,7 +425,7 @@ body{
 			.date-time{
 				font-size:1.2rem;
 				color:#fff;
-				word-spacing:2px;
+				word-spacing:-3px;
 			}
 		}
 		.mail-contact{
@@ -422,9 +433,12 @@ body{
 			margin-left: 62px;
 			.mail-icon{
 				margin-right:13px;
+				transform: translateY(2px);
 			}
 			.mail{
 				font-size:1.2rem;
+				font-family: "Meiryo";
+				font-weight: bold;
 			}
 		}
 	}
@@ -452,12 +466,12 @@ body{
 	background-color: #cccccc;
 	height: 120px;
 	.wid{
-		font-family: Meiryo;
 		width: 647px;
 		text-align:center;
 		margin:auto;
 		// line-height:23.8px;
 		a{
+			font-family: Meiryo;
 			font-size: 1.4rem;
 			text-transform:uppercase;
 			color:#222222;
@@ -692,6 +706,7 @@ body{
 				font-family: "Hiragino Kaku Gothic Pro", sans-serif;
 				font-weight: 300;
 				font-size: 1.4rem;
+				color: #555555;
 				width: 335px;
 			}
 
@@ -802,7 +817,7 @@ body{
 					font-family: "Hiragino Kaku Gothic Pro", sans-serif;
 					font-weight: 300;
 					font-size: 1.4rem;
-					color:535353;
+					color: #535353;
 				}
 			}
 			.btn{
@@ -873,15 +888,16 @@ body{
 			.mail-contact{
 				width: 250px;
 				height: 40px;
-				padding: 14px 23px;
+				padding: 12px 23px;
 				margin: 0;
 				transform: translateY(59px);
 				.mail-icon{
 					width: 14.5px;
-					margin-right: 5px;
+					margin-right: 4px;
+					transform: translateY(0);
 				}
 				.mail{
-					font-size: 1.3rem;;
+					font-size: 1.3rem;
 				}
 			}
 		}

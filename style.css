@@ -12,8 +12,7 @@
   src: url("fonts/meiryob.eot?#iefix") format("embedded-opentype"), url("fonts/meiryob.woff2") format("woff2"), url("fonts/meiryob.woff") format("woff"), url("fonts/meiryob.ttf") format("truetype"), url("fonts/meiryob.svg#fonts/meiryob") format("svg");
   /* Legacy iOS */
   font-weight: bold;
-  font-style: normal;
-  font-weight: bold; }
+  font-style: normal; }
 @font-face {
   font-family: "Hiragino Kaku Gothic Pro";
   src: url("fonts/HiraKakuProN-W6.otf");
@@ -47,7 +46,7 @@ body {
   .phone-contact .phone-icon {
     margin-right: 6px; }
   .phone-contact .date-time {
-    font-family: Meiryo;
+    font-family: "Meiryo";
     font-size: 1rem;
     color: black;
     margin-left: 3px;
@@ -62,7 +61,7 @@ body {
   margin-left: 22px; }
   .mail-contact .mail {
     display: inline-block;
-    font-family: Meiryo;
+    font-family: "Meiryo";
     color: #fd7e00;
     font-size: 1.4rem; }
 
@@ -89,7 +88,14 @@ body {
       .top-header .header .right .phone-contact img {
         margin-top: 1px; }
       .top-header .header .right .phone-contact .date-time {
-        font-size: 1rem; }
+        font-size: 1rem;
+        word-spacing: 2px; }
+      .top-header .header .right .mail-contact {
+        font-family: "Meiryo";
+        font-weight: bold; }
+        .top-header .header .right .mail-contact img {
+          transform: translateY(2px);
+          margin-right: 8px; }
     .top-header .header .open-respon {
       display: none; }
   .top-header .menu#navbar-normal {
@@ -105,8 +111,6 @@ body {
         max-width: 100%;
         padding: 15px 0px 20px 0px;
         border-bottom: 4px solid #dddddd; }
-        .top-header .menu#navbar-normal a img:hover {
-          background-color: #ffcaca; }
       .top-header .menu#navbar-normal a::before {
         content: "";
         width: 1px;
@@ -186,7 +190,7 @@ body {
         left: 100%;
         top: -100px; }
     #news .nd-news .right {
-      font-family: Meiryo;
+      font-family: "Meiryo";
       font-size: 1.6rem;
       display: inline-block;
       margin: 38px 0 0 39px; }
@@ -224,6 +228,7 @@ body {
       margin-bottom: 40px; }
     #construction .title p {
       width: 432px;
+      font-family: "Meiryo", sans-serif;
       font-size: 1.6rem;
       line-height: 22.4px;
       color: #555555;
@@ -281,13 +286,14 @@ body {
       right: 0;
       z-index: 101; }
   #overview .right {
-    width: 940px;
-    font-size: 1.6rem;
-    color: #545454; }
+    width: 940px; }
     #overview .right .img-title {
       margin-top: 81px;
       margin-bottom: 32px; }
     #overview .right .description {
+      font-family: "Meiryo", sans-serif;
+      font-size: 1.6rem;
+      color: #545454;
       line-height: 21px;
       margin-bottom: 32px;
       width: 910px; }
@@ -313,6 +319,7 @@ body {
       width: 364px; }
   #contact .description {
     font-size: 1.6rem;
+    font-family: "Meiryo";
     text-align: center;
     color: #fff;
     margin-bottom: 34px; }
@@ -326,14 +333,17 @@ body {
     #contact .detail-contact .phone-contact .date-time {
       font-size: 1.2rem;
       color: #fff;
-      word-spacing: 2px; }
+      word-spacing: -3px; }
     #contact .detail-contact .mail-contact {
       padding: 17px 21px 17px 20px;
       margin-left: 62px; }
       #contact .detail-contact .mail-contact .mail-icon {
-        margin-right: 13px; }
+        margin-right: 13px;
+        transform: translateY(2px); }
       #contact .detail-contact .mail-contact .mail {
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        font-family: "Meiryo";
+        font-weight: bold; }
   #contact #page-top {
     width: 80px;
     height: 80px;
@@ -355,11 +365,11 @@ body {
   background-color: #cccccc;
   height: 120px; }
   #sub-menu .wid {
-    font-family: Meiryo;
     width: 647px;
     text-align: center;
     margin: auto; }
     #sub-menu .wid a {
+      font-family: Meiryo;
       font-size: 1.4rem;
       text-transform: uppercase;
       color: #222222;
@@ -544,6 +554,7 @@ body {
         font-family: "Hiragino Kaku Gothic Pro", sans-serif;
         font-weight: 300;
         font-size: 1.4rem;
+        color: #555555;
         width: 335px; }
     #construction #product {
       display: none; }
@@ -618,7 +629,7 @@ body {
           font-family: "Hiragino Kaku Gothic Pro", sans-serif;
           font-weight: 300;
           font-size: 1.4rem;
-          color: 535353; }
+          color: #535353; }
       #overview .right .btn {
         margin-left: 21px; }
         #overview .right .btn #btn-text {
@@ -671,12 +682,13 @@ body {
       #contact .detail-contact .mail-contact {
         width: 250px;
         height: 40px;
-        padding: 14px 23px;
+        padding: 12px 23px;
         margin: 0;
         transform: translateY(59px); }
         #contact .detail-contact .mail-contact .mail-icon {
           width: 14.5px;
-          margin-right: 5px; }
+          margin-right: 4px;
+          transform: translateY(0); }
         #contact .detail-contact .mail-contact .mail {
           font-size: 1.3rem; }
     #contact #page-top {
