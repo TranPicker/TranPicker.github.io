@@ -7,7 +7,11 @@
 @font-face {
   font-family: "HiraKakuProN-W6";
   src: url("fonts/HiraKakuProN-W6.otf");
-  font-weight: W6; }
+  font-weight: 600; }
+@font-face {
+  font-family: "HiraKakuProN";
+  src: url("fonts/HiraKakuProN-W3.otf");
+  font-weight: 300; }
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +85,7 @@ body {
     transition: .5s; }
     .top-header .menu#navbar-normal a {
       display: inline-block;
-      margin-left: -3px; }
+      margin-left: -2px; }
       .top-header .menu#navbar-normal a img {
         max-width: 100%;
         padding: 15px 0px 20px 0px;
