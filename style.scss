@@ -865,6 +865,13 @@ body{
 			font-weight: 300;
 			font-size: 1.4rem;
 			margin-bottom: 29px;
+			p{
+				width: 242px;
+				margin: auto;
+				&:last-child{
+					width: 280px;
+				}
+			}
 		}
 		.detail-contact{
 			width: 250px;

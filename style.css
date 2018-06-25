@@ -664,6 +664,11 @@ body {
       font-weight: 300;
       font-size: 1.4rem;
       margin-bottom: 29px; }
+      #contact .description p {
+        width: 242px;
+        margin: auto; }
+        #contact .description p:last-child {
+          width: 280px; }
     #contact .detail-contact {
       width: 250px;
       height: 99px; }
