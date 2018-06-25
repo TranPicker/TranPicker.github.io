@@ -507,6 +507,7 @@ body{
 		width: 100%;
 		min-width:auto;
 		border-top:5px solid #0f5c9b;
+		overflow-x: hidden;
 	}
 	.top-header{
 		height: 60px;
@@ -577,7 +578,6 @@ body{
 			display: block;
 			padding:15px 0;
 			border-top:1px dashed white;
-			border-bottom:1px dashed white;
 			text-decoration: none;
 			font-size:1.5rem;
 			color: #fff;
@@ -599,6 +599,9 @@ body{
 				font-weight: 600;
 				display: inline-block;
 				margin-left: 15px
+			}
+			&:last-child {
+				border-bottom:1px dashed white;
 			}
 		}
 	}
